@@ -1,19 +1,19 @@
-SSH-Key-Authentication
+SSH-Key-Authentication<br><br>
 
-SSH Key Authentication between two linux computer
+SSH Key Authentication between two linux computer<br>
 
-I have two remote hosts:
-  (M): Master host -> 192.168.200.165 (green prompt)
-  (S): Slave host  -> 192.168.200.150 (red prompt)
+I have two remote hosts:<br>
+&emsp;&emsp;  (M): Master host -> 192.168.200.165 (green prompt)<br>
+&emsp;&emsp; (S): Slave host  -> 192.168.200.150 (red prompt)<br>
 
-M:
-  ssh-keygen -t rsa
+M:<br>
+&emsp;&emsp; ssh-keygen -t rsa<br>
   
-S:
-  cd ~
-  mkdir /root/.ssh
+S:<br>
+&emsp;&emsp; cd ~<br>
+&emsp;&emsp; mkdir /root/.ssh<br>
   
-M:  
-  ssh-copy-id -p 23 root@192.168.200.150
-  ssh -p 23 root@192.168.200.150
+M:  <br>
+&emsp;&emsp; ssh-copy-id -p 23 root@192.168.200.150<br>
+&emsp;&emsp; ssh -p 23 root@192.168.200.150<br>
   
